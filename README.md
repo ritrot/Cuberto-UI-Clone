@@ -1,1 +1,1 @@
-# Cuberto-UI-Clone
+Cuberto website UI Clone using react and tailwind and some other frameworks like gsap.

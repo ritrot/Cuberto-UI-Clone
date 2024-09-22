@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.kid{
+    height: 80%;
+    min-width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main{
+    user-select: none; /* Prevent text selection */
+    -webkit-user-drag: none; /* Prevent element dragging in WebKit browsers */
+    height: 440px;
+    overflow-x:hidden;
+    scroll-snap-type: x mandatory;      
+    cursor:pointer;
+}
+
+.ig img{
+    pointer-events: none; /* Disables all pointer events, including dragging */
+    user-drag: none; /* For Safari and older versions of Chrome */
+    -webkit-user-drag: none; /* For WebKit-based browsers */
+}
+.main::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+
+.mainlast{
+    user-select: none; /* Prevent text selection */
+    -webkit-user-drag: none; /* Prevent element dragging in WebKit browsers */
+    overflow-x:hidden;
+    scroll-snap-type: x mandatory;      
+    cursor:pointer;
+}
+.son{
+    user-select: none;
+    min-width: 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.son img{
+    pointer-events: none; /* Disables all pointer events, including dragging */
+    user-drag: none; /* For Safari and older versions of Chrome */
+    -webkit-user-drag: none; /* For WebKit-based browsers */
+}
+
+
+
+.anitext{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.prsent{
+    animation: texta 2.5s ;
+}
+
+              /* <button
+                // onMouseEnter={() => { setbtnhover(!btnhover) }}
+                // onMouseLeave={() => { setbtnhover(!btnhover) }}
+                type="button" className={`p-20 pl-[160px] pr-[160px] absolute border-slate-950 ${btnhover ? "absent" : "prsent"} border-solid z-10 top-[30vw] border rounded-full`}>What we do</button> */
+@keyframes texta{
+    from{
+        background-color: white;
+        transform: translateY(0vw);                                                                                 
+    }
+    to{
+        background-color: black;
+        transform: translateY(-13vw);
+    }
+}
+/* 
+.dad:hover .child{
+    animation-play-state: paused;    
+
+} */
+.child{
+    animation: scroll infinite 10s linear;
+}
+.boy li{
+    animation: scroll infinite 1s linear;
+    padding-right: 30px;
+    min-width: fit-content;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+/* @keyframes scrollm {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+} */
