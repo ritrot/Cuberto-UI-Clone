@@ -22,7 +22,7 @@ function App() {
     <Pihlosopy/>
     <Development/>
     <Newday title="New Day —&nbsp;New Inspo" w="min-w-[140vw]"/>
-    <Lastdrag/>
+    {/* <Lastdrag/> */}
     <Footer/>
     </>
   )
